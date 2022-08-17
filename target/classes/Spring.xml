@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+    <context:component-scan base-package="org.example"/>
+    
+    <!-- xml implementation
+    <util:list id="ph" value-type="org.example.Phone">
+        <ref bean="phone"/>
+    </util
+        
+    <bean id="student" class="org.example.Student">
+        <constructor-arg index="0" value="0"/>
+        <constructor-arg index="1" value="AAAA"/>   
+        <constructor-arg index="2" ref="ph"/>
+        <constructor-arg index="3" ref="address"/>
+    </bean>
+    <bean id="address" class="org.example.Address">
+        <property name="city" value="peoria"/>
+        <property name="state" value="AZ"/>
+        <property name="country" value="USA"/>
+        <property name="zipcode" value="00000"/>
+    </bean>
+    <bean id="phone" class="org.example.Phone">
+        <property name="mob" value="000-000-0000"/>
+    </bean>-->
+</beans>
